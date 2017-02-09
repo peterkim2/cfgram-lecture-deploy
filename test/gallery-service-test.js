@@ -46,13 +46,13 @@ describe('Gallery Service', function() {
       let galleryID = 'testid';
       let headers = {
         Authorization: 'Bearer test token',
-        Accept: "application/json, text/plain, */*",
+        Accept: 'application/json, text/plain, */*',
       };
 
       this.$httpBackend.expectDELETE(`${__API_URL__}/api/gallery/testid`, headers).respond(204);
       this.galleryService.deleteGallery(galleryID);
       this.$httpBackend.flush();
       this.$rootScope.$apply();
-    })
+    });
   });
 });

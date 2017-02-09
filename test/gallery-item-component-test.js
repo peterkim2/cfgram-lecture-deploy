@@ -8,7 +8,7 @@ describe('Gallery Item Component', function(){
       this.$componentController = $componentController;
       this.$httpBackend = $httpBackend;
       this.authService = authService;
-    })
+    });
   });
 
   describe('galleryItemCtrl.deleteDone()', () => {
@@ -59,4 +59,4 @@ describe('Gallery Item Component', function(){
     this.$httpBackend.flush();
     this.$rootScope.$apply();
   });
-})
+});

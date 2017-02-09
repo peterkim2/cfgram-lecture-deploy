@@ -9,7 +9,7 @@ describe('Edit Gallery Component', function(){
       this.$componentController = $componentController;
       this.$httpBackend = $httpBackend;
       this.authService = authService;
-    })
+    });
   });
 
   it('should contain the proper component bindings', () => {
@@ -25,7 +25,7 @@ describe('Edit Gallery Component', function(){
     expect(editGalleryCtrl.gallery.desc).toEqual(mockBindings.gallery.desc);
 
     this.$rootScope.$apply();
-  })
+  });
 
   describe('editGalleryCtrl.updateGallery()', () => {
     it('should make a valid PUT request', () => {
